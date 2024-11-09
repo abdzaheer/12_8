@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <title>My Skills - Portfolio</title>
 		<style type="text/css">
+            
 		/* Global Styles */
 		body {
 		    font-family: Arial, sans-serif;
@@ -19,18 +20,19 @@
 		}
 
         /* Navigation Styles */
-        ul {
+        nav ul {
             list-style-type: none;
             padding: 0;
             background-color: #333;
             overflow: hidden;
+            margin-bottom: 20px;
         }
 
-        li {
+        nav li {
             float: left;
         }
 
-        li a {
+        nav li a {
             display: block;
             color: white;
             text-align: center;
@@ -39,7 +41,7 @@
             transition: background-color 0.3s;
         }
 
-        li a:hover {
+        nav li a:hover {
             background-color: #111;
         }
 
@@ -78,40 +80,15 @@
             padding: 5px 0;
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) { 
-            li {
-            float: none;
-            text-align: center;
-            }
-
-            li a {
-                border-bottom: 1px solid #555;
-            }
-        }
-
-        /* Accessibility */
         a:focus {   
             outline: 2px solid #3498db;
             outline-offset: 2px;
         }
 
-        /* Print Styles */
-        @media print {
-            body {
-                background-color: white;
-                color: black;
-            }
-
-            nav {
-                display: none;
-            }
-
-            section {
-                box-shadow: none;
-                margin-top: 0;
-            }
+        a:hover {
+            color: #2980b9;
         }
+
     </style>
     </head>
 
@@ -128,9 +105,10 @@
 			</ul>
 		</nav>
 
+        <h1>Skills</h1>
+
         <!-- Skills Page Content -->
         <section>
-            <h1>Skills</h1>
 
             <!-- Programming Languages Section -->
             <div>
