@@ -1,0 +1,34 @@
+/* Styling for the horizontal navigation bar */
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 4px 0; /* Padding at the top and bottom of the navbar */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the navbar items horizontally */
+}
+
+.navbar ul {
+    list-style-type: none; /* Removes the bullets from the list */
+    display: flex; /* Displays the list items horizontally */
+    justify-content: center; /* Ensures the list items are centered */
+    width: 100%; /* Ensures the ul takes up the full width */
+    padding: 0; /* Removes default padding */
+}
+
+.navbar li {
+    margin: 0 20px; /* Adds spacing between each link */
+}
+
+.navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 16px; /* Sets the font size of the links */
+    font-weight: bold; /* Makes the links bold */
+    padding: 8px 12px; /* Adds padding inside the links */
+    border-radius: 4px; /* Rounds the corners of the link for a smooth look */
+}
+
+.navbar a:hover {
+    color: #fff; /* Keeps the text white when hovering */
+    background-color: #555; /* Changes background color to gray on hover */
+    text-decoration: none; /* Keeps the text without an underline */
+}
