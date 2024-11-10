@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Page- Portfolio</title>
+    <link rel="stylesheet" href="ContactPageStyle.css">
 
     <style type="text/css">
 body {
@@ -16,29 +17,38 @@ body {
 }
 
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    margin-bottom: 20px;
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 4px 0; /* Padding at the top and bottom of the navbar */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the navbar items horizontally */
 }
 
-nav li {
-    float: left;
+.navbar ul {
+    list-style-type: none; /* Removes the bullets from the list */
+    display: flex; /* Displays the list items horizontally */
+    justify-content: center; /* Ensures the list items are centered */
+    width: 100%; /* Ensures the ul takes up the full width */
+    padding: 0; /* Removes default padding */
 }
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+.navbar li {
+    margin: 0 20px; /* Adds spacing between each link */
 }
 
-nav li a:hover {
-    background-color: #111;
+.navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 16px; /* Sets the font size of the links */
+    font-weight: bold; /* Makes the links bold */
+    padding: 8px 12px; /* Adds padding inside the links */
+    border-radius: 4px; /* Rounds the corners of the link for a smooth look */
+}
+
+.navbar a:hover {
+    color: #fff; /* Keeps the text white when hovering */
+    background-color: #555; /* Changes background color to gray on hover */
+    text-decoration: none; /* Keeps the text without an underline */
 }
 
 
@@ -126,15 +136,15 @@ button:focus {
 </head>
 <body>
 
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="skills.html">Skills</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+	<nav class="navbar">
+        <ul>
+            <!-- List of navigation links -->
+            <li><a href="HomePage.html">Home</a></li> <!-- Link to HomePage -->
+            <li><a href="AboutPage.html">About Me</a></li> <!-- Link to About Me page -->
+            <li><a href="ProjectPage.html">My Projects</a></li> <!-- Link to My Projects page -->
+            <li><a href="SkillsPage.html">My Skills</a></li> <!-- Link to My Skills page -->
+            <li><a href="ContactPage.html">Contact Me</a></li> <!-- Link to Contact Me page -->
+        </ul>
 
     <h1>Contact Me</h1>
 
