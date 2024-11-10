@@ -1,0 +1,94 @@
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Soft light background for liminal theme */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 28px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Project Cards */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* The repeat() function to define column properties such as count and size, auto-fill for
+                                                                     automatically choosing column count based on space in window, minmax to determine each
+                                                                     column size either a min of 300px or 1fr as in 1 fraction size of the number of colums */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition the image transform (upscale) and box-shadow when hovering over */
+}
+
+.project-card img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.project-date,
+.project-tech {
+    font-size: 14.4px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
