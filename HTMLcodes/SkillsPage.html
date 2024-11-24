@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <title>My Skills - Portfolio</title>
 	<link href="SkillsPageStyle.css" type="text/css" rel="stylesheet" />
+    <script src="SkillsPageScript.js"></script> 
         <style type="text/css">
 		/* Styling for the horizontal navigation bar */
 		.navbar {
@@ -62,53 +63,18 @@
         <h1>Skills</h1>
 
         <!-- Skills Page Content -->
-        <section>
 
-            <!-- Programming Languages Section -->
-            <div>
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML & CSS</li>
-                </ul>
-            </div>
-
-            <!-- Development Tools Section -->
-            <div>
-                <h2>Development Tools</h2>
-                <ul>
-                    <li>Git & GitHub</li>
-                    <li>Visual Studio Code</li>
-                    <li>MySQL</li>
-                    <li>Docker</li>
-                    <li>Postman</li>
-                </ul>
-            </div>
-
-            <!-- Frameworks Section -->
-            <div>
-                <h2>Frameworks</h2>
-                <ul>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>.NET Core</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-
-            <!-- Certifications Section -->
-            <div>
-                <h2>Certifications & Online Courses</h2>
-                <ul>
-                    <li>Certified Python Developer - XYZ Institute</li>
-                    <li>Full Stack Web Development - ABC Online Course</li>
-                    <li>Java Programming Fundamentals - Coursera</li>
-                </ul>
-            </div>
-        </section>
+        <div class="button-container">
+            <button onclick="showList('programming')">Programming Languages</button>
+            <button onclick="showList('tools')">Development Tools</button>
+            <button onclick="showList('frameworks')">Frameworks</button>
+            <button onclick="showList('certifications')">Certifications</button>
+        </div>
+    
+        <!-- Section to display the list -->
+         
+        <div class="list-container" id="list-container">
+            <!-- List will be dynamically updated here -->
+        </div>
     </body>
 </html>
