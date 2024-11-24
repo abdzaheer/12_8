@@ -54,8 +54,37 @@ form {
     margin-bottom: 30px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+/* Simplified spacing between labels and fields */
+form label {
+    margin-bottom: 3px; /* Reduced spacing */
+    display: block; /* Keeps the label above the input */
     font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px; /* Better alignment */
+    width: 100%; 
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form p {
+    margin-bottom: 10px; /* Spacing changes */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;  /* Added button color */
 }
