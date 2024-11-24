@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="AboutPageStyle.css"> <!-- Links to the external CSS file for styling -->
 </head>
 <body>
+    
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress-bar"></div>
 
 <!-- Navigation Bar -->
 <nav class="navbar">
@@ -30,15 +33,15 @@
 	Algorithms, and Software Engineering, which have enhanced my knowledge of software development.</p>
     
     <!-- Areas of Expertise Section -->
-    <h2>Areas of Expertise</h2> <!-- Subheading for the Areas of Expertise section -->
-    <div>
-        <ul> <!-- Unordered list to list areas of expertise -->
-            <li>Programming Languages: C++, Java, JavaScript, HTML, CSS</li> <!-- Programming languages expertise -->
-            <li>Software Development: Web Development, Desktop Applications, Mobile Applications</li> <!-- Software development expertise -->
-            <li>Problem-Solving: Algorithm Design, Data Structures, Debugging Techniques</li> <!-- Problem-solving expertise -->
-        </ul>
-    </div>
-    
+    <h2>Areas of Expertise</h2>
+    <ul id="expertise-list">
+        <li data-description="Skilled in writing efficient code using these languages.">Programming Languages: C++, Java, JavaScript, HTML, CSS</li>
+        <li data-description="Experience in building web, desktop, and mobile applications.">Software Development: Web Development, Desktop Applications, Mobile Applications</li>
+        <li data-description="Proficient in creating and optimizing algorithms, data structures, and debugging techniques.">Problem-Solving: Algorithm Design, Data Structures, Debugging Techniques</li>
+    </ul>
+    <!-- Hover Info Box -->
+    <div id="hover-info" style="display: none;"></div>
+	
     <!-- Career Goals Section -->
     <h2>Career Goals</h2> <!-- Subheading for the Career Goals section -->
     <p>My career goal is to become a proficient software developer, specializing in designing and building innovative solutions that solve real-world problems.
@@ -48,7 +51,8 @@
     <h2>Internships</h2> <!-- Subheading for the Internships section -->
     <p>I am currently seeking internships to gain practical experience in the software development field. 
 	I am particularly interested in roles that allow me to work on real-world applications and collaborate with experienced developers.</p>
-</section>  
+</section> 
 
+    <script src="AboutPageScript.js"></script>
 </body>
 </html>
