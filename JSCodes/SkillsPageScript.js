@@ -1,3 +1,6 @@
+
+// Wael Ouddane (U21104525)
+
 // Define the data for each category
 const data = {
     programming: ["C++", "Java", "C#", "Python", "JavaScript", "HTML & CSS"],
