@@ -16,22 +16,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
 var yearElement = document.getElementById("year");
 yearElement.textContent = new Date().getFullYear();
 
-// Tooltip for social media links
-var tooltips = document.querySelectorAll('.tooltip');
-tooltips.forEach(function (link) {
-    link.addEventListener('mouseover', function () {
-        var tooltipText = this.getAttribute('data-tooltip');
-        var tooltip = document.createElement('span');
-        tooltip.className = 'tooltip-box';
-        tooltip.textContent = tooltipText;
-        this.appendChild(tooltip);
-    });
-
-    link.addEventListener('mouseout', function () {
-        this.querySelector('.tooltip-box').remove();
-    });
-});
-
 // Background color toggle
 var toggleButton = document.getElementById("toggle-bg");
 toggleButton.addEventListener("click", function () {
