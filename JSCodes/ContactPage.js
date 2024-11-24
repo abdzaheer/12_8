@@ -19,7 +19,7 @@ yearElement.textContent = new Date().getFullYear();
 // Background color toggle
 var toggleButton = document.getElementById("toggle-bg");
 toggleButton.addEventListener("click", function () {
-    var colors = ["#f4f4f4", "#e0f7fa", "#fbe9e7", "#ede7f6", "#fffde7"];
+    var colors = ["#f4f4f4", "#e0f7fa", "#fbe9e7", "#ede7f6", "#fffde7","f2f2f2"];
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = randomColor;
 });
