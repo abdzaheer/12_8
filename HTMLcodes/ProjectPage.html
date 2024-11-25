@@ -5,6 +5,7 @@
     <title>Projects - Portfolio</title>
     <link href="../CSSCodes/navbarStyle.css" rel="stylesheet" type="text/css">
     <link href="../CSSCodes/ProjectPageStyle.css" rel="stylesheet" type="text/css">
+    <script src="../JSCodes/ProjectPageScript.js"></script>
 </head>
 
 <body>
@@ -25,63 +26,90 @@
 
 <h2>Projects</h2>
 
+<!-- Sorting Dropdown -->
+<div class="sorting-bar">
+    <label>Sort By:</label>
+    <select id="sortprojects">
+        <option value="newest">Newest First</option>
+        <option value="oldest" selected>Oldest First</option>
+        <option value="asc-name">Ascending Name</option>
+        <option value="desc-name">Descending Name</option>
+    </select>
+</div>
+
 <!-- Projects Container -->
-<div class="projects-container"> <!-- Using a class styled with a grid display. -->
+<div class="projects-container">
     <!-- Project 1 -->
     <div class="project-card">
-        <img src="#" alt="Project 1 Thumbnail"> <!-- REMINDER: ADD EXAMPLE IMAGES TO DEMONSTRATE HOVER EFFECT -->
-        <div class="project-title">Project 1 Title</div>
+        <img src="../img/privatebank-logo.png" alt="Project 1 Thumbnail">
+        <div class="project-title">Private Banking Website</div>
         <div class="project-date">15-01-2023</div>
         <div class="project-tech">HTML, CSS, JavaScript</div>
         <div class="project-description">
-            A brief description of Project 1. This project demonstrates skills in HTML, CSS, and JavaScript.
+            Front-end web development for a Swiss private bank using HTML, CSS, and JavaScript.
         </div>
         <div class="project-links">
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
-        </div>
+            <a href="" video-link="lJIrF4YjHfQ">Live Demo</a>
+            <a href="https://github.com/" target="_blank">GitHub Repository</a>
+        </div>        
     </div>
 
     <!-- Project 2 -->
     <div class="project-card">
-        <img src="#" alt="Project 2 Thumbnail"> <!-- REMINDER: ADD EXAMPLE IMAGES TO DEMONSTRATE HOVER EFFECT -->
-        <div class="project-title">Project 2 Title</div>
-        <div class="project-date">22-03-2024</div>
+        <img src="../img/learnsphere-logo.png" alt="Project 2 Thumbnail">
+        <div class="project-title">LearnSphere</div>
+        <div class="project-date">10-05-2023</div>
         <div class="project-tech">Python, React</div>
         <div class="project-description">
-            A brief description of Project 2. This project focuses on using Python and React.
+            An interactive online learning platform that features video courses, quizzes, and real-time progress tracking. 
+            It provides for both learners and instructors with personalized dashboards and live session functions.
         </div>
         <div class="project-links">
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
-        </div>
+            <a href="" video-link="9tusoKSh0AU">Live Demo</a>
+            <a href="https://github.com/" target="_blank">GitHub Repository</a>
+        </div>        
     </div>
 
     <!-- Project 3 -->
     <div class="project-card">
-        <img src="#" alt="Project 3 Thumbnail"> <!-- REMINDER: ADD EXAMPLE IMAGES TO DEMONSTRATE HOVER EFFECT -->
-        <div class="project-title">Project 3 Title</div>
-        <div class="project-date">10-05-2023</div>
+        <img src="../img/studychat-logo.png" alt="Project 3 Thumbnail">
+        <div class="project-title">StudyChat</div>
+        <div class="project-date">22-03-2024</div>
         <div class="project-tech">Node.js, Express</div>
         <div class="project-description">
-            A brief description of Project 3. This project highlights work with Node.js and Express.
+            StudyChat is a real-time messaging app designed for study groups, allowing users to discuss coursework and share notes. 
+            Built with Node.js and Express, it provides private group chats and file-sharing features for academic communication.
         </div>
         <div class="project-links">
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
-        </div>
+            <a href="" video-link="sfH4TF7TmnE">Live Demo</a>
+            <a href="https://github.com/" target="_blank">GitHub Repository</a>
+        </div>        
     </div>
 
-    <!-- Project 4 ADD MORE EXAMPLES TO DEMONSTRATE GRID COLUMN TEMPLATE AUTO-FILL
+    <!-- Project 4 -->
     <div class="project-card">
-        <img src="#" alt="Project 3 Thumbnail">
-        <div class="project-title">Project 3 Title</div>
-        <div class="project-date">10-05-2023</div>
-        <div class="project-tech">Node.js, Express</div>
+        <img src="../img/pappystory-logo.png" alt="Project 4 Thumbnail">
+        <div class="project-title">Pappy's Story</div>
+        <div class="project-date">11-11-2024</div>
+        <div class="project-tech">Unreal Engine 5, C++</div>
         <div class="project-description">
-            A brief description of Project 3. This project highlights work with Node.js and Express.
+            Pappy's Story is a 3D platformer where players control Pappy the baby exploring vibrant worlds filled with puzzles and enemies. 
+            Developed using Unreal Engine and C++, the game features the latest tech and features the engine provides.
         </div>
         <div class="project-links">
-            <a href="#">Live Demo</a> | <a href="#">GitHub Repository</a>
+            <a href="" video-link="8Fk5sRwbEWI">Live Demo</a>
+            <a href="https://github.com/" target="_blank">GitHub Repository</a>
         </div>
-    </div>  -->
+    </div>
+</div>
+
+<!-- YouTube Media Player Modal Window -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span> <!-- &times for the close symbol (×) -->
+        <iframe id="YouTubeMediaPlayer" width="560" height="315" frameborder="0" allow="accelerometer; 
+        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Taken from YouTube's Embed Video tags -->
+    </div>
 </div>
 
 </body>
