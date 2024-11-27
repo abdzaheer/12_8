@@ -1,10 +1,12 @@
 /* Body Style */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(0deg, rgba(176,176,180,1) 0%, rgba(244,244,249,1) 5%); /* Soft light background for liminal theme with shadow at page end */ 
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(176,176,176,1) 0%, rgba(244,244,244,1) 5%); /* Soft light background for liminal theme with shadow at page end */ 
     color: #333333;
+    max-width: 1200px;
+    margin:auto;
+    line-height:1.6;
 }
 
 header {
@@ -109,7 +111,7 @@ h2 {
     font-size: 16px;
     color: #555555;
     margin-bottom: 15px;
-    height:125px;
+    height:150px;
 }
 
 .project-links {
